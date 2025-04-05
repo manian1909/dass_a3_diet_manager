@@ -17,6 +17,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.io.*;
 
 /**
  * Command-line interface for the Yet Another Diet Assistant (YADA) application.
@@ -30,6 +31,7 @@ public class YadaCLI {
     private List<CalorieTargetStrategy> availableStrategies;
     private final DailyFoodLog dailyFoodLog;
     private LocalDate currentlySelectedDate;
+    private static final String USER_PROFILE_FILE = "user_profile.txt";
 
 
     /**
@@ -246,9 +248,16 @@ public class YadaCLI {
     }
 
     /**
-     * Sets up initial user profile.
+     * Sets up initial user profile by loading from file or prompting user.
      */
     private void setupUserProfile() {
+        // Try to load profile from file first
+        if (loadUserProfile()) {
+            System.out.println("User profile loaded successfully.");
+            return;
+        }
+        
+        // If loading failed, ask user for information
         System.out.println("\n--- Initial User Profile Setup ---");
         
         // Gender selection
@@ -268,6 +277,62 @@ public class YadaCLI {
         
         // Create profile
         userProfile = new DietProfile(gender, weight, height, age, activityLevel);
+        
+        // Save the profile
+        saveUserProfile();
+        System.out.println("User profile created and saved.");
+    }
+
+    /**
+     * Loads user profile from file.
+     * @return true if successfully loaded, false otherwise
+     */
+    private boolean loadUserProfile() {
+        File profileFile = new File(USER_PROFILE_FILE);
+        if (!profileFile.exists() || profileFile.length() == 0) {
+            return false;
+        }
+        
+        try (BufferedReader reader = new BufferedReader(new FileReader(profileFile))) {
+            String line = reader.readLine();
+            if (line != null) {
+                String[] parts = line.split("\\|");
+                if (parts.length >= 5) {
+                    Gender gender = Gender.valueOf(parts[0]);
+                    double weight = Double.parseDouble(parts[1]);
+                    double height = Double.parseDouble(parts[2]);
+                    int age = Integer.parseInt(parts[3]);
+                    ActivityLevel activityLevel = ActivityLevel.valueOf(parts[4]);
+                    
+                    userProfile = new DietProfile(gender, weight, height, age, activityLevel);
+                    return true;
+                }
+            }
+        } catch (IOException | IllegalArgumentException e) {
+            System.err.println("Error loading user profile: " + e.getMessage());
+        }
+        
+        return false;
+    }
+
+    /**
+     * Saves user profile to file.
+     */
+    private void saveUserProfile() {
+        if (userProfile == null) {
+            return;
+        }
+        
+        try (PrintWriter writer = new PrintWriter(new FileWriter(USER_PROFILE_FILE))) {
+            writer.println(String.format("%s|%.2f|%.2f|%d|%s",
+                userProfile.getGender(),
+                userProfile.getWeight(),
+                userProfile.getHeight(),
+                userProfile.getAge(),
+                userProfile.getActivityLevel()));
+        } catch (IOException e) {
+            System.err.println("Error saving user profile: " + e.getMessage());
+        }
     }
 
     /**
@@ -297,6 +362,8 @@ public class YadaCLI {
                 }
             }
             
+            // Save profile after updating
+            saveUserProfile();
             System.out.println("Profile updated successfully!");
         }
     }
@@ -560,6 +627,7 @@ public class YadaCLI {
     private void saveDatabase() {
         foodDatabase.saveDatabase();
         dailyFoodLog.saveLogs();
+        saveUserProfile(); // Also save user profile
         System.out.println("Database saved successfully!");
     }
 

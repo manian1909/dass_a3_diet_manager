@@ -1,0 +1,147 @@
+[
+    {
+      "id": "food001",
+      "name": "White Bread Slice",
+      "keywords": ["bread", "sandwich bread", "loaf"],
+      "calories_per_serving": 70
+    },
+    {
+      "id": "food002",
+      "name": "Whole Wheat Bread Slice",
+      "keywords": ["wheat bread", "sandwich bread"],
+      "calories_per_serving": 80
+    },
+    {
+      "id": "food003",
+      "name": "Naan",
+      "keywords": ["naan", "indian bread"],
+      "calories_per_serving": 200
+    },
+    {
+      "id": "food004",
+      "name": "Cooked Rice",
+      "keywords": ["rice", "white rice", "basmati"],
+      "calories_per_serving": 200
+    },
+    {
+      "id": "food005",
+      "name": "Cheddar Cheese",
+      "keywords": ["cheese", "cheddar"],
+      "calories_per_serving": 113
+    },
+    {
+      "id": "food006",
+      "name": "Paneer",
+      "keywords": ["paneer", "indian cheese", "cottage cheese"],
+      "calories_per_serving": 265
+    },
+    {
+      "id": "food007",
+      "name": "Whole Milk",
+      "keywords": ["milk", "dairy", "full cream"],
+      "calories_per_serving": 150
+    },
+    {
+      "id": "food008",
+      "name": "Boiled Egg",
+      "keywords": ["egg", "hard boiled egg", "protein"],
+      "calories_per_serving": 70
+    },
+    {
+      "id": "food009",
+      "name": "Grilled Chicken",
+      "keywords": ["chicken", "grilled chicken"],
+      "calories_per_serving": 165
+    },
+    {
+      "id": "food010",
+      "name": "Dal",
+      "keywords": ["dal", "lentils", "indian dal"],
+      "calories_per_serving": 180
+    },
+    {
+      "id": "food011",
+      "name": "Peanut Butter",
+      "keywords": ["peanut butter", "spread"],
+      "calories_per_serving": 190
+    },
+    {
+      "id": "food012",
+      "name": "Cooked Chickpeas",
+      "keywords": ["chickpeas", "chana", "protein"],
+      "calories_per_serving": 270
+    },
+    {
+      "id": "food013",
+      "name": "Cooked Spinach",
+      "keywords": ["spinach", "cooked greens"],
+      "calories_per_serving": 30
+    },
+    {
+      "id": "food014",
+      "name": "Tomato",
+      "keywords": ["tomato", "vegetable"],
+      "calories_per_serving": 22
+    },
+    {
+      "id": "food015",
+      "name": "Onion",
+      "keywords": ["onion", "veggie"],
+      "calories_per_serving": 44
+    },
+    {
+      "id": "food016",
+      "name": "Cucumber",
+      "keywords": ["cucumber", "salad"],
+      "calories_per_serving": 16
+    },
+    {
+      "id": "food017",
+      "name": "Butter",
+      "keywords": ["butter", "spread"],
+      "calories_per_serving": 102
+    },
+    {
+      "id": "food018",
+      "name": "Ghee",
+      "keywords": ["ghee", "clarified butter", "indian fat"],
+      "calories_per_serving": 120
+    },
+    {
+      "id": "food019",
+      "name": "Jam",
+      "keywords": ["jam", "jelly", "fruit spread"],
+      "calories_per_serving": 50
+    },
+    {
+      "id": "food020",
+      "name": "Mayonnaise",
+      "keywords": ["mayo", "mayonnaise", "spread"],
+      "calories_per_serving": 90
+    },
+    {
+      "id": "food021",
+      "name": "Roti",
+      "keywords": ["roti", "chapati", "indian bread"],
+      "calories_per_serving": 120
+    },
+    {
+      "id": "food022",
+      "name": "Boiled Potato",
+      "keywords": ["potato", "boiled"],
+      "calories_per_serving": 160
+    },
+    {
+      "id": "food023",
+      "name": "Green Peas",
+      "keywords": ["peas", "green peas", "veggie"],
+      "calories_per_serving": 60
+    },
+    {
+      "id": "food024",
+      "name": "Whole Wheat Roti",
+      "keywords": ["whole wheat roti", "chapati", "roti"],
+      "calories_per_serving": 120
+    }
+  ]
+  
