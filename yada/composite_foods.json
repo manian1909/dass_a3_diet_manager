@@ -1,0 +1,94 @@
+[
+    {
+      "id": "composite001",
+      "name": "Peanut Butter Sandwich",
+      "components": [
+        { "name": "White Bread Slice", "servings": 2 },
+        { "name": "Peanut Butter", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite002",
+      "name": "PB&J Sandwich",
+      "components": [
+        { "name": "White Bread Slice", "servings": 2 },
+        { "name": "Peanut Butter", "servings": 1 },
+        { "name": "Jam", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite003",
+      "name": "Paneer Wrap",
+      "components": [
+        { "name": "Roti", "servings": 1 },
+        { "name": "Paneer", "servings": 1 },
+        { "name": "Onion", "servings": 0.5 },
+        { "name": "Tomato", "servings": 0.5 }
+      ]
+    },
+    {
+      "id": "composite004",
+      "name": "Dal Chawal",
+      "components": [
+        { "name": "Dal", "servings": 1 },
+        { "name": "Cooked Rice", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite005",
+      "name": "Naan Paneer",
+      "components": [
+        { "name": "Naan", "servings": 1 },
+        { "name": "Paneer", "servings": 1 },
+        { "name": "Onion", "servings": 0.5 }
+      ]
+    },
+    {
+      "id": "composite006",
+      "name": "Veg Sandwich",
+      "components": [
+        { "name": "Whole Wheat Bread Slice", "servings": 2 },
+        { "name": "Butter", "servings": 0.5 },
+        { "name": "Tomato", "servings": 0.5 },
+        { "name": "Cucumber", "servings": 0.5 },
+        { "name": "Onion", "servings": 0.5 }
+      ]
+    },
+    {
+      "id": "composite007",
+      "name": "Egg Salad",
+      "components": [
+        { "name": "Boiled Egg", "servings": 1 },
+        { "name": "Cucumber", "servings": 0.5 },
+        { "name": "Onion", "servings": 0.5 },
+        { "name": "Mayonnaise", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite008",
+      "name": "Chana Roti",
+      "components": [
+        { "name": "Roti", "servings": 1 },
+        { "name": "Cooked Chickpeas", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite009",
+      "name": "Ghee Roti",
+      "components": [
+        { "name": "Roti", "servings": 1 },
+        { "name": "Ghee", "servings": 1 }
+      ]
+    },
+    {
+      "id": "composite010",
+      "name": "Paneer Rice Bowl",
+      "components": [
+        { "name": "Cooked Rice", "servings": 1 },
+        { "name": "Paneer", "servings": 1 },
+        { "name": "Tomato", "servings": 0.5 },
+        { "name": "Onion", "servings": 0.5 }
+      ]
+    }
+  ]
+  

@@ -1,24 +1,25 @@
-White Bread Slice|bread,sandwich bread,loaf|70.00
-Whole Wheat Bread Slice|wheat bread,sandwich bread|80.00
-Naan|naan,indian bread|200.00
-Cooked Rice|rice,white rice,basmati|200.00
-Cheddar Cheese|cheese,cheddar|113.00
-Paneer|paneer,indian cheese,cottage cheese|265.00
-Whole Milk|milk,dairy,full cream|150.00
-Boiled Egg|egg,hard boiled egg,protein|70.00
-Grilled Chicken|chicken,grilled chicken|165.00
-Dal|dal,lentils,indian dal|180.00
-Peanut Butter|peanut butter,spread|190.00
-Cooked Chickpeas|chickpeas,chana,protein|270.00
-Cooked Spinach|spinach,cooked greens|30.00
-Tomato|tomato,vegetable|22.00
-Onion|onion,veggie|44.00
-Cucumber|cucumber,salad|16.00
-Butter|butter,spread|102.00
 Ghee|ghee,clarified butter,indian fat|120.00
-Jam|jam,jelly,fruit spread|50.00
+Grilled Chicken|chicken,grilled chicken|165.00
+Green Peas|peas,green peas,veggie|60.00
+Cooked Chickpeas|chickpeas,chana,protein|270.00
+Tomato|tomato,vegetable|22.00
+Tofu|tofu,vegan paneer|76.00
+Cooked Rice|rice,white rice,basmati|200.00
+Cooked Spinach|spinach,cooked greens|30.00
+Cheddar Cheese|cheese,cheddar|113.00
+Whole Milk|milk,dairy,full cream|150.00
+Peanut Butter|peanut butter,spread|190.00
+Naan|naan,indian bread|200.00
+Onion|onion,veggie|44.00
+Butter|butter,spread|102.00
+Dal|dal,lentils,indian dal|180.00
+Whole Wheat Roti|whole wheat roti,chapati,roti|120.00
+Boiled Potato|potato,boiled|160.00
 Mayonnaise|mayo,mayonnaise,spread|90.00
 Roti|roti,chapati,indian bread|120.00
-Boiled Potato|potato,boiled|160.00
-Green Peas|peas,green peas,veggie|60.00
-Whole Wheat Roti|whole wheat roti,chapati,roti|120.00
+Boiled Egg|egg,hard boiled egg,protein|70.00
+Jam|jam,jelly,fruit spread|50.00
+White Bread Slice|bread,sandwich bread,loaf|70.00
+Whole Wheat Bread Slice|wheat bread,sandwich bread|80.00
+Paneer|paneer,indian cheese,cottage cheese|265.00
+Cucumber|cucumber,salad|16.00

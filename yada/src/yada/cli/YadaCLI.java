@@ -59,23 +59,30 @@ public class YadaCLI {
     public void start() {
         setupUserProfile();
         
-        while (true) {
-            displayMainMenu();
-            int choice = getIntInput("Enter your choice: ", 1, 8);
-            
-            switch (choice) {
-                case 1 -> manageFoods();
-                case 2 -> searchFoods();
-                case 3 -> createCompositeFood();
-                case 4 -> updateDietProfile();
-                case 5 -> viewCalorieTarget();
-                case 6 -> saveDatabase();
-                case 7 -> {
-                    System.out.println("Exiting YADA. Goodbye!");
-                    return;
+        try {
+            while (true) {
+                displayMainMenu();
+                int choice = getIntInput("Enter your choice: ", 1, 8);
+                
+                switch (choice) {
+                    case 1 -> manageFoods();
+                    case 2 -> searchFoods();
+                    case 3 -> createCompositeFood();
+                    case 4 -> updateDietProfile();
+                    case 5 -> viewCalorieTarget();
+                    case 6 -> saveDatabase();
+                    case 7 -> {
+                        System.out.println("Saving database before exit...");
+                        saveDatabase();
+                        System.out.println("Exiting YADA. Goodbye!");
+                        return;
+                    }
+                    case 8 -> foodLoggingMenu();
                 }
-                case 8 -> foodLoggingMenu();
             }
+        } finally {
+            // Ensure database is saved even if program terminates unexpectedly
+            saveDatabase();
         }
     }
 
