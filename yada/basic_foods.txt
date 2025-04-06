@@ -3,6 +3,7 @@ Grilled Chicken|chicken,grilled chicken|165.00
 Green Peas|peas,green peas,veggie|60.00
 Cooked Chickpeas|chickpeas,chana,protein|270.00
 Tomato|tomato,vegetable|22.00
+poha|poha|150.00
 Tofu|tofu,vegan paneer|76.00
 Cooked Rice|rice,white rice,basmati|200.00
 Cooked Spinach|spinach,cooked greens|30.00
